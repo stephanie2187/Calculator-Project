@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Cute Love";
+    src: 
+        url("fonts/Cute Love.woff")
+    format("woff");
+    font-weight: normal;
+}
+
+
+body {
+    background-color: #f9dcc4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    
+}
+
+.title {
+    font-family: "Cute Love";
+    font-size: 2rem;
+    color: #ffb5a7;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.calculator-body {
+    background-color:#fff9f1;
+    border: 3px solid;
+    border-color: #f5ebe0;
+    margin-top: 500px;
+    margin: auto;
+    padding: 15px;
+    height: 65%;
+    width: 40%; /* 35*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.keypad {
+    display: flex;
+}
+
+.number-pad {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(4, 70px);
+    flex-grow: 1;
+    margin-left: 20px; /* 10 */
+    /* margin-right: 60px;  60 */
+    margin-right: 40px;
+    margin-top: 2rem; /* 35 */  
+}
+
+
+
+.symbol-pad {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(3, 70px);
+    flex-grow: 1;
+    margin-top: 2rem; /* 35 */  
+    margin-right: 45px;
+    padding-right: 30px;
+    order: 1;
+}
+
+.screen {
+    background-color: #fcd5ce;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    order: -1;
+    margin-top: .8rem;
+    width: 90%;
+    min-height: 4rem;
+    margin: auto;
+}
+
+.previous-input {
+    color: #fc9e8d;
+    font-family: "Cute Love";
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.current-input {
+    color: #fc9e8d;
+    font-family: "Cute Love";
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    letter-spacing: .2rem;
+}
+
+.square-button {
+    width: 55px;
+    height: 55px;
+    border-radius: 0px;
+    background-color: #f9dcc4;
+    color: #f7f4f3;
+    font-family: "Cute Love";
+    font-size: 25px;
+    
+
+}
+
+.rectangle-button {
+    width: 260px;
+    height: 55px;
+    border-radius: 0px;
+    background-color: #f9dcc4;
+    color: #f7f4f3;
+    font-family: "Cute Love";
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+
+button {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    border-radius: 50px;
+    background-color: #fcd5ce;
+    border: none;
+    color: #f7f4f3;
+    font-family: "Cute Love";
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #fc9e8d;
+}

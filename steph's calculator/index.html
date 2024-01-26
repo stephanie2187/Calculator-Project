@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steph's Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="title">
+        <h1>Steph's Calculator</h1>
+    </div>
+    <div class="calculator-body">
+        <div class="screen">
+            <div data-previous-input class="previous-input"></div>
+            <div data-current-input class="current-input"></div>
+        </div>
+        
+        <div class="keypad">
+            <div class="number-pad">
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-number id="zero-button">0</button>
+            </div>
+            
+            <div class="symbol-pad">
+                <button data-operation>+</button>
+                <button data-operation>-</button>
+                <button data-operation>*</button>
+                <button data-operation>÷</button>
+                <button data-number>.</button>
+                <button data-number>%</button>
+                <button data-equals class="square-button">=</button>
+                <button data-clear class="square-button">←</button>
+                <button data-all-clear class="rectangle-button">clear</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
